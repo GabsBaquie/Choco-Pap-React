@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import data from "../../data/products.json";
 import NavBar from "../../components/NavBar/Nav";

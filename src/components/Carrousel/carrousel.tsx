@@ -1,5 +1,5 @@
 // Component Carrousel
-"use client";
+
 import "./carrousel.css";
 
 // npm i react-responsive-carousel
