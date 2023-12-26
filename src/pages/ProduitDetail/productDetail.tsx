@@ -19,7 +19,7 @@ type ProductDetailProps = {
   productId: number;
 };
 
-const ProductDetail = () => {
+const ProductDetail: React.FC<ProductDetailProps> = () => {
   const { id } = useParams();
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
