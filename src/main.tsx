@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { CartProvider } from "./components/Context/context.tsx";
 import Boutique from "./pages/Boutique/boutique.tsx";
 import ProductDetail from "./pages/ProduitDetail/productDetail.tsx";
-import Panier from "./pages/Panier/Panier.js";
+import Panier from "./pages/Panier/panier.js";
 
 const router = createBrowserRouter([
   {
