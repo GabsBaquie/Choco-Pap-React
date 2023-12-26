@@ -9,18 +9,23 @@ const REMOVE_FROM_CART = "REMOVE_FROM_CART";
 const CLEAR_CART = "CLEAR_CART";
 const VALIDATE_CART = "VALIDATE_CART";
 
-const cartReducer = (
-  state: any[],
-  action: {
-    type: any;
-    payload: {
-      id: number;
-      quantity: number;
-      item: { id: number };
-      newQuantity: number;
-    };
-  }
-) => {
+type CartItem = {
+  id: number;
+  quantity: number;
+  item: {
+    id: number;
+  };
+  newQuantity: number;
+};
+
+type CartAction = {
+  type: string;
+  payload: CartItem;
+};
+
+type CartState = CartItem[];
+
+const cartReducer = (state: CartState, action: CartAction): CartState => {
   switch (action.type) {
     case ADD_TO_CART:
       const existingProductIndex = state.findIndex(
@@ -41,7 +46,7 @@ const cartReducer = (
 
     case INITIALIZE_CART:
       // Initialiser le panier à partir du localStorage
-      return action.payload || [];
+      return action.payload ? [action.payload] : [];
 
     case UPDATE_CART_ITEM_QUANTITY:
       return state.map((item) =>
@@ -68,7 +73,10 @@ const cartReducer = (
 };
 
 // Create the context
-const CartContext = createContext({ cart: [], dispatch: () => {} });
+const CartContext = createContext({
+  cart: [] as CartState,
+  dispatch: (action: CartAction) => {},
+});
 
 // Custom hook to use the context
 export const useCart = () => useContext(CartContext);
