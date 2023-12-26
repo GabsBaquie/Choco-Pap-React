@@ -1,7 +1,7 @@
 import ProductDetail from "../ProduitDetail/productDetail";
 
 const Produit = () => {
-  return <ProductDetail productId={0} />;
+  return <ProductDetail />;
 };
 
 export default Produit;
