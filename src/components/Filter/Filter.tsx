@@ -1,4 +1,4 @@
-import "../../pages/Boutique/Boutique.css";
+import "../../pages/Boutique/boutique.css";
 import React, { useEffect, useState } from "react";
 
 // props de Filter type
