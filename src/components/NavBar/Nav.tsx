@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Panier from "../../pages/Panier/panier";
+import Panier from "../../pages/Panier/Panier";
 import "./navBar.css";
 import { useState } from "react";
 import { useCart } from "../Context/context";

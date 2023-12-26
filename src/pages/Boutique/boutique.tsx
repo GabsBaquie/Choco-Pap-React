@@ -1,6 +1,6 @@
 import { useState } from "react";
 import data from "../../data/products.json";
-import NavBar from "../../components/NavBar/Nav";
+import NavBar from "../../components/NavBar/nav";
 import Footer from "../../components/Footer/footer";
 import "./boutique.css";
 import Filter from "../../components/Filter/Filter";
