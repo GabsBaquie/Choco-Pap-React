@@ -15,6 +15,10 @@ interface Product {
   // Ajoutez ici d'autres propriétés si nécessaire
 }
 
+type ProductDetailProps = {
+  productId: number;
+};
+
 const ProductDetail = () => {
   const { id } = useParams();
   const [product, setProduct] = useState<Product | null>(null);
