@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useCart } from "../../components/Context/context";
-import "./panier.css";
+import "./Panier.css";
 import { Link } from "react-router-dom";
 
 function Panier() {
