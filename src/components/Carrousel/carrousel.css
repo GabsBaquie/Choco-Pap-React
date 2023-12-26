@@ -1,0 +1,54 @@
+.carouselWrapper {
+  inset: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  transition: transform 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 2px 2px;
+}
+
+#styleBc {
+  background-color: #2f180a;
+  padding: 0px 200px;
+  margin-top: 10px;
+}
+
+.carouselCenterButton {
+  /* pour positioner le button au centre */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  /* ---------------------- */
+  display: inline-block;
+  font-size: 40px;
+  font-family: "Droid Serif";
+  padding: 5px;
+  border: 2px solid #2c1e1e;
+  box-shadow: 0 8px 5px #2c1e1e8b;
+}
+
+.carouselCenterButton a {
+  color: #2c1e1e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Resposive Mobile */
+
+@media screen and (max-width: 768px) {
+  #styleBc {
+    background-color: transparent;
+    padding: 0;
+  }
+  .carouselWrapper {
+    width: auto;
+    height: auto;
+  }
+}

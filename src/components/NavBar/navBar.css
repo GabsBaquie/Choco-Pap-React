@@ -1,0 +1,120 @@
+/* NavBar module css */
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+}
+
+.span {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1ch;
+  right: 5ch;
+}
+
+.navUl {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.Navbar a {
+  font-size: 30px;
+  margin: 10px 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.Navbar a:hover {
+  cursor: pointer;
+  color: #2c1e1e;
+}
+
+.hamburger {
+  display: none; /* cachez le bouton hamburger par défaut */
+}
+
+.navUl {
+  display: flex;
+}
+
+.navUl.show {
+  display: block; /* affichez le menu lorsque l'état est 'show' */
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #2f180a;
+  animation: reveal 0.5s ease-out; /* appliquez l'animation */
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 45px;
+  }
+
+  .span {
+    top: 0.5ch;
+    right: 1ch;
+  }
+
+  .navUl {
+    display: none;
+  }
+
+  .navUl.show {
+    background-color: #2f180a;
+    grid-column: 1 / -1; /* ajoutez cette ligne */
+  }
+
+  .navUl.show ul,
+  .navUl.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Navbar {
+    margin: 10px 0px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 0;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,65 @@
+/* Footer module css */
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif");
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 170px;
+  margin: 0 15px;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia img {
+  margin: 5px;
+}
+
+.information,
+.contact {
+  margin: 20px;
+}
+
+.information {
+  margin-right: 0;
+}
+
+.textStyle3 {
+  font-size: 18px;
+}
+.textStyle3,
+.textStyle4 {
+  color: #2c1e1e;
+  font-family: "Droid Serif";
+}
+
+/* Resposive Mobile */
+
+@media screen and (max-width: 768px) {
+  footer {
+    margin-top: 20px;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .socialMedia {
+    margin: 0;
+  }
+  .information,
+  .contact {
+    margin: 0;
+  }
+  .textStyle3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .textStyle3,
+  .textStyle4 {
+    font-family: "Droid Serif";
+  }
+}

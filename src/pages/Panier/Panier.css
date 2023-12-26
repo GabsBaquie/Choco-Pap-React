@@ -1,0 +1,127 @@
+/* Panier.module.css */
+.panier-container {
+  position: fixed;
+  top: 0;
+  right: 0; /* Cacher le panier à droite de la page */
+  width: 450px; /* Largeur du panier */
+  height: 100%;
+  background-color: #2f180a;
+  overflow-y: auto; /* Activer le défilement si nécessaire */
+  transition: right 0.3s ease; /* Animation de transition */
+  z-index: 3; /* Pour s'assurer que le panier est au-dessus du contenu */
+  display: none;
+}
+
+#liPanier {
+  inset: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#poubelle {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+#poubelle img:hover {
+  color: #d56a27;
+  transform: scale(1.08);
+}
+
+#poubelle img {
+  width: 20px;
+  height: 20px;
+  color: beige;
+}
+
+#liPanier img {
+  margin: 20px;
+}
+.panierText {
+  color: wheat;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: none;
+}
+
+.panierText h2 {
+  cursor: pointer;
+}
+
+.panierText h2:hover {
+  color: #d56a27;
+}
+
+.buttonPanier {
+  background-color: #d56a27;
+  font-family: "Droid Serif";
+  font-weight: bold;
+  color: #2c1e1e;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.panierImage {
+  width: 70px;
+  height: 70px;
+  margin: 10px 50px;
+  cursor: pointer; /* Curseur de la main lors du survol */
+}
+@media screen and (max-width: 768px) {
+  .panier-container {
+    width: 100%;
+  }
+  .panierText {
+    display: block;
+  }
+  .panierImage {
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+  }
+
+  #liPanier img {
+    width: 100px;
+    height: 100px;
+  }
+  #poubelle img {
+    display: none;
+  }
+  .panierText ul {
+    inset: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputPanier {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  #PanierDelete {
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 15px;
+  }
+
+  #PanierUl {
+    display: block;
+  }
+
+  .PanierMobile {
+    width: 150px;
+  }
+}

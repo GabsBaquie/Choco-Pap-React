@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "image": "/images/produit1.jpg",
+    "name": "Cerisier",
+    "price": 2.99,
+    "stars": 5,
+    "description": "Cerisier - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "ingredients": "Cerise enrobée de pâtes d'amandes, de chocolat au lait et d'éclat de noisettes. Allergènes : SOJA, LAIT (LACTOSE). Contient de l'anhydride sulfureux",
+    "filter": ["ch-noix", "ch-liqueur", "ch-all"]
+  },
+  {
+    "id": 2,
+    "image": "/images/produit2.jpg",
+    "name": "Coulis Caramel",
+    "price": 13.99,
+    "stars": 3,
+    "description": "Coulis Caramel - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "ingredients": "Coulis de caramel enrobé de chocolat au lait. Allergènes : SOJA, LAIT (LACTOSE). Contient de l'anhydride sulfureux",
+
+    "filter": ["ch-caramel", "ch-all"]
+  },
+  {
+    "id": 3,
+    "image": "/images/produit3.jpg",
+    "name": "Douceur exotique",
+    "price": 4.99,
+    "stars": 4,
+    "description": "Douceur exotique - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "ingredients": "Liqueur aromatisée à la cerise enrobée de chocolat au lait. Allergènes : SOJA, LAIT (LACTOSE). Contient de l'anhydride sulfureux",
+
+    "filter": ["ch-chocolat-noir", "ch-fruit", "ch-liqueur", "ch-all"]
+  },
+
+  {
+    "id": 4,
+    "image": "/images/produit4.jpg",
+    "name": "Blanc Passion",
+    "price": 5.99,
+    "stars": 5,
+    "description": "Blanc Passion - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "ingredients": "Pâte à la noix de coco enrobée de chocolat blanc. Allergènes : SOJA, LAIT (LACTOSE). Contient de l'anhydride sulfureux",
+
+    "filter": ["ch-chocolat-blanc", "ch-all"]
+  },
+
+  {
+    "id": 5,
+    "image": "/images/produit5.jpg",
+    "name": "Douceur croquante",
+    "price": 2.99,
+    "stars": 3,
+    "description": "Douceur croquante - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "ingredients": "Noisette enrobée de chocolat au lait. Allergènes : SOJA, LAIT (LACTOSE). Contient de l'anhydride sulfureux",
+
+    "filter": ["ch-noix", "ch-all"]
+  },
+
+  {
+    "id": 6,
+    "image": "/images/produit6.jpg",
+    "name": "Le Zèbre",
+    "price": 19.99,
+    "stars": 4,
+    "description": "Le Zèbre - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "ingredients": "Mixe de chocolat blanc et de chocolat au lait. Allergènes : SOJA, LAIT (LACTOSE). Contient de l'anhydride sulfureux",
+
+    "filter": ["ch-chocolat-noir", "ch-chocolat-lait", "ch-all"]
+  },
+
+  {
+    "id": 7,
+    "image": "/images/produit7.jpg",
+    "name": "Coulis Fraise",
+    "price": 9.99,
+    "stars": 3,
+    "description": "Coulis Fraise - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "ingredients": "Morceau de fraise à la liqueur entièrement enrobée de chocolat au lait et d'éclat de noisettes. Allergènes : SOJA, LAIT (LACTOSE). Contient de l'anhydride sulfureux",
+
+    "filter": ["ch-noix", "ch-all"]
+  },
+
+  {
+    "id": 8,
+    "image": "/images/produit8.jpg",
+    "name": "Noir Passion",
+    "price": 4.99,
+    "stars": 5,
+    "description": "Noir Passion - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "ingredients": "Chocolat noir au coeur fondant. Allergènes : SOJA, LAIT (LACTOSE). Contient de l'anhydride sulfureux",
+
+    "filter": ["ch-chocolat-noir", "ch-all"]
+  },
+
+  {
+    "id": 9,
+    "image": "/images/produit9.jpg",
+    "name": "Fantaisie",
+    "price": 2.99,
+    "stars": 3,
+    "description": "Fantaisie - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "ingredients": "Noix enrobée de chocolat au lait et parcemée de billes de sucre colorées. Allergènes : SOJA, LAIT (LACTOSE). Contient de l'anhydride sulfureux",
+
+    "filter": ["ch-chocolat-noir", "ch-all"]
+  }
+]

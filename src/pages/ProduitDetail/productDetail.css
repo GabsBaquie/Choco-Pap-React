@@ -1,0 +1,20 @@
+.content {
+  display: flex;
+  background-color: #2f180a;
+  color: wheat;
+}
+
+.table {
+  margin-left: 50px;
+}
+
+.contentTable {
+  padding: 30px 10px;
+  color: wheat;
+  background-color: #2f180a;
+}
+
+.contentTable {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

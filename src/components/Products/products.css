@@ -1,0 +1,114 @@
+.produits {
+  margin: 15px 20px;
+  width: auto;
+  text-align: center;
+}
+
+.produits ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.produits li {
+  list-style: none;
+  margin-bottom: 30px;
+  background-color: #2f180a;
+  width: 250px;
+  padding: 45px 50px;
+  border-radius: 5px;
+  transition: transform 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.produits li:hover {
+  transform: scale(1.03);
+}
+
+.produits li p,
+.produits li h1 {
+  margin: 10px;
+  color: #d56a27;
+}
+
+.produits li h1 {
+  font-size: 30px;
+}
+
+.produits button {
+  background-color: #d56a27;
+  font-family: "Droid Serif";
+  font-weight: bold;
+  color: #2c1e1e;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.produits button:hover {
+  background-color: #ff9000;
+  color: #2c1e1e;
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 1100px) {
+  .produits ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .produits li {
+    height: 450px;
+}
+
+@media screen and (max-width: 800px) {
+  .produits ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .produits {
+    width: 100%;
+    height: auto;
+    margin: 30px 0 0;
+    overflow-y: scroll;
+  }
+
+  .produits ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 750px;
+  }
+
+  .scrollContainer {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  /* Largeur de la barre de défilement */
+  .produits::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Piste */
+  .produits::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Curseur */
+  .produits::-webkit-scrollbar-thumb {
+    background: #88888880;
+  }
+
+  /* Curseur au survol */
+  .produits::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .produits li {
+    margin: 30px;
+  }
+}
