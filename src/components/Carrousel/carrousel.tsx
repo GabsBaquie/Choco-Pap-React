@@ -1,5 +1,4 @@
 // Component Carrousel
-
 import "./carrousel.css";
 
 // npm i react-responsive-carousel
