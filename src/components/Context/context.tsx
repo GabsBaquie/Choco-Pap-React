@@ -75,7 +75,7 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
 // Create the context
 const CartContext = createContext({
   cart: [] as CartState,
-  dispatch: (action: CartAction) => {},
+  dispatch: (_action: CartAction) => {},
 });
 
 // Custom hook to use the context
