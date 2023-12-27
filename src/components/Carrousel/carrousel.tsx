@@ -45,7 +45,7 @@ export default class NextJsCarousel extends Component {
               />
               <p className="legend">Image 2</p>
               <button className="carouselCenterButton">
-                <a href="/Boutique">VOIR LA BOUTIQUE</a>
+                <Link to="/Boutique">VOIR LA BOUTIQUE</Link>
               </button>
             </div>
 
@@ -58,7 +58,7 @@ export default class NextJsCarousel extends Component {
               />
               <p className="legend">Image 3</p>
               <button className="carouselCenterButton">
-                <a href="/Boutique">VOIR LA BOUTIQUE</a>
+                <Link to="/Boutique">VOIR LA BOUTIQUE</Link>
               </button>
             </div>
           </Carousel>
