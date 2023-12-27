@@ -82,7 +82,7 @@ const Boutique = () => {
   return (
     <>
       <NavBar />
-      <h1>Boutique</h1>
+      <h1 id="Titre">Boutique</h1>
       <div className="content">
         {/* FILTRES */}
         <Filter

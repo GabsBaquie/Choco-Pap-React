@@ -78,7 +78,12 @@ select {
 
 @media screen and (max-width: 770px) {
   #filter {
-    margin-top: 40px;
+    margin-top: 5px;
+  }
+
+  #Titre {
+    padding: 10px 0 40px;
+    margin-top: 10px;
   }
 
   .text-style3 {

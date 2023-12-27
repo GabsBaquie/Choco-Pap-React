@@ -95,7 +95,6 @@
   }
 
   .Navbar {
-    margin: 10px 0px;
     padding: 0;
     display: grid;
     grid-template-columns: 3fr 1fr;
