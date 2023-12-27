@@ -45,6 +45,7 @@
 
 .hamburger {
   display: none; /* cachez le bouton hamburger par défaut */
+  color: black;
 }
 
 .navUl {
@@ -69,6 +70,7 @@
     cursor: pointer;
     outline: none;
     font-size: 45px;
+    color: black;
   }
 
   .span {
