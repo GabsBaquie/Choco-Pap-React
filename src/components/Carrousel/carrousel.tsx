@@ -7,6 +7,7 @@ import "./carrousel.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class NextJsCarousel extends Component {
   render() {
@@ -31,7 +32,7 @@ export default class NextJsCarousel extends Component {
               />
               <p className="legend">Image 1</p>
               <button className="carouselCenterButton">
-                <a href="/Boutique">VOIR LA BOUTIQUE</a>
+                <Link to="/Boutique">VOIR LA BOUTIQUE</Link>
               </button>
             </div>
 
