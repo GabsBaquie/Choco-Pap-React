@@ -1,7 +1,7 @@
-import NavBar from "./components/NavBar/Nav";
+import "./App.css";
 import NextJsCarousel from "./components/Carrousel/carrousel";
 import Footer from "./components/Footer/footer";
-import "./App.css";
+import NavBar from "./components/NavBar/Nav";
 
 function App() {
   return (

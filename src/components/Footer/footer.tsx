@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div>
           <img
-            src="/images/logo-instagram.jpeg"
+            src="/images/logo-instagram.png"
             width={40}
             height={40}
             alt="instagram"

@@ -1,14 +1,26 @@
 .content {
   display: flex;
+  justify-content: center;
   background-color: #2f180a;
   color: wheat;
 }
 
+.content-produit {
+  align-items: center;
+  height: 60vh;
+}
+
 .table {
   margin-left: 50px;
+  align-items: center;
 }
 
 .contentTable {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-top: 50px;
   padding: 30px 10px;
   color: wheat;
   background-color: #2f180a;
@@ -17,4 +29,10 @@
 .contentTable {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media (max-width: 768px) {
+  .content-produit {
+    height: 75vh;
+  }
 }

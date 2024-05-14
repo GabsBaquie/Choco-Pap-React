@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# EPSI Choco Pap e-commerce de chocolat
 
-## Getting started
-npm run dev
+Ce projet est un e-commerce de chocolat développé dans le cadre de l'école EPSI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Fonctionnalités
 
-Currently, two official plugins are available:
+- Affichage des produits disponibles
+- Ajout de produits au panier
+- Gestion du panier d'achat
+- Passer une commande
+- Suivi des commandes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies utilisées
 
-## Expanding the ESLint configuration
+- React.js pour la partie front-end
+- Node.js pour la partie back-end
+- MongoDB pour la base de données
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clonez ce dépôt sur votre machine locale.
+2. Assurez-vous d'avoir Node.js et MongoDB installés.
+3. Dans le répertoire racine du projet, exécutez la commande suivante pour installer les dépendances :
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+   ```shell
+   npm install
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4. Configurez les variables d'environnement nécessaires, telles que les informations de connexion à la base de données.
+5. Lancez l'application en exécutant la commande suivante :
+
+   ```shell
+   npm start
+   ```
+
+6. Accédez à l'application dans votre navigateur à l'adresse [http://localhost:3000](http://localhost:3000).
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
+
+1. Fork ce dépôt.
+2. Créez une branche pour votre fonctionnalité ou votre correction de bug.
+3. Effectuez vos modifications.
+4. Soumettez une demande d'extraction.
+
+## Licence
+
+Ce projet est sous licence MIT. Veuillez consulter le fichier [LICENSE](LICENSE) pour plus d'informations.

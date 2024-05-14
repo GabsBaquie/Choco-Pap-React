@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/images/produit1.jpg",
+    "image": "/images/cerisier.png",
     "name": "Cerisier",
     "price": 2.99,
     "stars": 5,
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "image": "/images/produit2.jpg",
+    "image": "/images/caramel.png",
     "name": "Coulis Caramel",
     "price": 13.99,
     "stars": 3,
@@ -23,7 +23,7 @@
   },
   {
     "id": 3,
-    "image": "/images/produit3.jpg",
+    "image": "/images/exotique.png",
     "name": "Douceur exotique",
     "price": 4.99,
     "stars": 4,
@@ -75,7 +75,7 @@
 
   {
     "id": 7,
-    "image": "/images/produit7.jpg",
+    "image": "/images/colis-fraise.png",
     "name": "Coulis Fraise",
     "price": 9.99,
     "stars": 3,
@@ -88,7 +88,7 @@
 
   {
     "id": 8,
-    "image": "/images/produit8.jpg",
+    "image": "/images/produit8.png",
     "name": "Noir Passion",
     "price": 4.99,
     "stars": 5,

@@ -44,6 +44,7 @@ function Products({
                 <img
                   width={140}
                   height={100}
+                  style={{ objectFit: "cover", borderRadius: 5 }}
                   src={product.image}
                   alt={product.name}
                 />
@@ -54,8 +55,7 @@ function Products({
               <button
                 onClick={() => {
                   addToCart(product);
-                }}
-              >
+                }}>
                 Ajouter au panier
               </button>
             </li>

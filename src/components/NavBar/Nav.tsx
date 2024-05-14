@@ -1,8 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Panier from "../../pages/Panier/Panier";
-import "./navBar.css";
-import { useState } from "react";
 import { useCart } from "../Context/context";
+import "./navBar.css";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -31,8 +31,8 @@ const NavBar = () => {
           className="logo"
           src="/images/logo.png"
           alt="Logo"
-          width={70}
-          height={70}
+          width={60}
+          height={60}
         />
         {showSpan()}
         <button onClick={toggleMenu} className="hamburger">

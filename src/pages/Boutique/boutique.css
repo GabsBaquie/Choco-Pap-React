@@ -3,6 +3,7 @@
 
 .content {
   display: flex;
+  border-radius: 0 0 5px 5px;
 }
 .droite {
   width: 100%;
@@ -18,6 +19,7 @@ h1 {
   background-color: #2f180a;
   color: wheat;
   padding: 30px;
+  border-radius: 5px 5px 0 0;
 }
 
 .text-style3 {

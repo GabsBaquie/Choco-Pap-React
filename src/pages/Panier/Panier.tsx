@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useCart } from "../../components/Context/context";
 import "./Panier.css";
-import { Link } from "react-router-dom";
 
 function Panier() {
   const { cart, dispatch } = useCart() as { cart: any[]; dispatch: any };
@@ -51,6 +51,19 @@ function Panier() {
     }
   };
 
+  // Fonction pour générer une chaîne d'émojis en fonction du nombre d'étoiles
+  const emojiStars = (stars: number) => {
+    // Vérifiez que 'stars' est un nombre
+    if (typeof stars !== "number" || isNaN(stars) || stars < 1 || stars > 5) {
+      return ""; // Retournez une chaîne vide en cas de valeur invalide
+    }
+    let emojiString = "";
+    for (let i = 0; i < stars; i++) {
+      emojiString += "⭐️"; // Ajoutez un emoji étoile pour chaque étoile
+    }
+    return emojiString;
+  };
+
   function PanierItem({
     item,
     deleteItem,
@@ -70,13 +83,27 @@ function Panier() {
           ""
         )}
         <Link to={`/produit/${item.id}`}>
-          <img width={45} height={45} src={item.image} alt={item.name} />
+          <img
+            width={55}
+            height={55}
+            src={item.image}
+            alt={item.name}
+            style={{ borderRadius: 5 }}
+          />
         </Link>
         <div>
           {!isMobile ? (
-            `${item.name} - ${item.quantity} = ${Math.round(
-              item.quantity * item.price
-            )} €`
+            <div className="Panier">
+              <div>
+                <p>
+                  {item.name} - {item.quantity}
+                </p>
+                <p style={{ fontSize: 15 }}>{emojiStars(item.stars)}</p>
+              </div>
+              <div>
+                <p>{item.price} €</p>
+              </div>
+            </div>
           ) : (
             <div className="PanierMobile">
               {item.name} <br />
@@ -112,12 +139,10 @@ function Panier() {
       />
       <div
         className="panier-container"
-        style={{ display: isOpen ? "block" : "none" }}
-      >
+        style={{ display: isOpen ? "block" : "none" }}>
         <div
           className="panierText"
-          style={{ display: isOpen ? "block" : "none" }}
-        >
+          style={{ display: isOpen ? "block" : "none" }}>
           <h2 onClick={togglePanier}>Panier ⓧ </h2>
           <ul id="PanierUl">
             {cart.map((item) => (
@@ -138,15 +163,13 @@ function Panier() {
               alignContent: "center",
               margin: "40px 80px",
               gap: "10px",
-            }}
-          >
+            }}>
             <button
               onClick={() => {
                 dispatch({ type: "CLEAR_CART" });
                 console.log("panier vidé");
               }}
-              className="buttonPanier "
-            >
+              className="buttonPanier ">
               Réinitialiser le panier
             </button>
             <button
@@ -154,8 +177,7 @@ function Panier() {
                 dispatch({ type: "VALIDATE_CART" });
                 console.log("panier validé");
               }}
-              className="buttonPanier"
-            >
+              className="buttonPanier">
               Valider le panier
             </button>
           </div>
